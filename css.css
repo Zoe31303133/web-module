@@ -1,0 +1,31 @@
+html, body{
+    display: flex;
+    width: 100%;    
+    height: 100%;
+}
+
+.preview-window{
+    width: 2000px;
+    height: 1500px;
+    background-color: bisque;
+    color: aqua;
+}
+
+.preview-window:hover, .preview-window *:hover{
+    border: solid 2px red;
+}
+
+.panel{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 5%;
+}
+
+.panel div{
+    width: 100%;
+}
+
+.option-name{
+    margin-right: 10%;
+}

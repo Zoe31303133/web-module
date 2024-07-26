@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="js.js"></script>
+    <link rel="stylesheet" href="css.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="preview-window">
+        <div class="level-1">d <div class="level-2">d</div></div>
+    </div>
+    <div class="panel">
+        <div>
+            <span class="option-name">class </span>
+            <span class="selected-class"></span>
+        </div>
+        <div>
+            <span class="option-name">background-color: </span>
+            <input class="color-editor" type="color" oninput="change(this, 'background-color')" >
+        </div>
+        <div>
+            <span class="option-name">opacity: </span>
+            <input class="opacity-editor" type="range" min="0" max="1" step="0.1" oninput="change(this, 'opacity')" >
+
+        </div>
+        <div>
+            <span class="option-name">color: </span>
+            <input class="font_color-editor" type="color" oninput="change(this, 'color')" >
+        </div>
+        <div>
+            <span class="option-name">font-size: </span>
+            <input type="range" oninput="changeWithUnit(this, 'font-size')" >
+            <input class="unit" type="text" value="px">
+        </div>
+        
+        <div>
+            <span class="option-name">padding: </span>
+            <input class="padding-control" type="range" oninput="changeWithUnit(this, 'padding')" >
+            <input class="unit" type="text" value="px">
+        </div>
+
+    </div>
+    
+</body>
+</html>
